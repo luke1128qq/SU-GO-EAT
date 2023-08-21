@@ -1,0 +1,153 @@
+.form {
+  width: 800px;
+  padding: 20px;
+  padding-left: 50px;
+  border-radius: 20px;
+  color: #000000;
+  font-weight: 800;
+  border: 2px solid #921010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+.formArea {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formArea2 {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: -20px;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.input {
+  border: 2px solid #921010;
+  border-radius: 10px;
+  height: 50px;
+  padding: 5px;
+  padding-top: 7px;
+  padding-left: 10px;
+  margin-left: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  width: 370px;
+}
+
+.input2 {
+  border: 2px solid #921010;
+  border-radius: 10px;
+  height: 50px;
+  width: 337px;
+  padding: 5px;
+  position: relative;
+  left: 70px;
+}
+
+.hide {
+  width: 130px;
+  height: 50px;
+  /* background-color: #a8a7a7; */
+  /* margin-left: 50px; */
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: 14px;
+}
+
+.hide2 {
+  width: 130px;
+  height: 50px;
+  /* background-color: #a8a7a7; */
+  position: relative;
+  left: -7px;
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: 14px;
+}
+
+.formBtn {
+  margin: 30px;
+}
+
+.birth {
+  position: relative;
+  left: 50px;
+}
+
+.file {
+  position: relative;
+  left: -215px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.label {
+  position: relative;
+  left: 30px;
+}
+
+@media screen and (max-width: 391px) {
+  .form {
+    width: 360px;
+    padding: 10px;
+    padding-left: 0px;
+    position: relative;
+  }
+
+  .formArea {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .formArea2 {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  .input {
+    width: 300px;
+    left: 0;
+    margin-left: 28px;
+  }
+
+  .input2 {
+    width: 300px;
+    left: 0;
+    margin-left: 50px;
+  }
+
+  .hide {
+    margin-left: 30px;
+  }
+
+  .file {
+    left: 30px;
+  }
+
+  .label {
+    width: 250px;
+  }
+
+  .birth {
+    width: 250px;
+  }
+}

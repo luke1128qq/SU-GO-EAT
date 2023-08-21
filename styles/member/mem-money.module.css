@@ -1,0 +1,335 @@
+.area0 {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  margin-bottom: 80px;
+  margin-top: 15px;
+}
+
+.imgArea {
+  width: 330px;
+  height: 300px;
+  background-image: url('/member/hamburger.png');
+  background-size: cover;
+  overflow: visible;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  left: 48px;
+  animation: moveUpDown 1.2s ease-in;
+}
+
+.imgArea:hover {
+  animation: moveUpDown 1s infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.imgText {
+  width: 350px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: #f7e6c6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  padding: 5px;
+  position: absolute;
+  top: 240px;
+  left: 1035px;
+  font-size: 20px;
+  font-weight: 800;
+  animation: opacityAndMoveAnimation 3s infinite;
+}
+
+/* .imgText:hover {
+  animation: moveUpDown 1.5s infinite;
+} */
+
+@keyframes opacityAndMoveAnimation {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+.area1 {
+  font-size: 20px;
+  width: 60%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #921010;
+  overflow: hidden;
+  margin-bottom: 60px;
+  padding: 10px;
+  padding-bottom: 40px;
+  background-color: #fff;
+}
+
+.area2 {
+  font-size: 18px;
+  width: 100%;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  font-weight: 800;
+  border: 2px solid #921010;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.area3 {
+  font-size: 18px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 2px solid #921010;
+  height: 455px;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.recordBox {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.text {
+  height: 50px;
+  width: 99%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.inputArea {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #921010;
+  height: 80px;
+  border-radius: 15px;
+}
+
+.nowMoney {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.input {
+  font-size: 18px;
+  width: 70%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.title {
+  color: #fefdfb;
+  margin-right: 10px;
+}
+
+.btn {
+  width: 75px;
+  height: 60px;
+  background-color: #fece4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  font-weight: 900;
+  box-shadow: inset -7px -7px 7px rgba(126, 95, 51, 0.6);
+  margin-right: 3px;
+  transition: all 0.1s ease-in;
+  margin-left: 30px;
+}
+
+.btn:hover {
+  background-color: #ffe291;
+}
+
+.recordBtn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #aa9696;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: white;
+}
+
+.recordBtn:hover {
+  background-color: #d6bebe;
+  transition: all 0.1s ease-in;
+  transform: scale(1.1);
+}
+
+.btnArea {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+  position: relative;
+}
+
+@media screen and (max-width: 391px) {
+  .area0 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 100%;
+  }
+
+  .area1 {
+    width: 90%;
+    height: 300px;
+    padding-bottom: 20px;
+  }
+
+  .area2 {
+    width: 90%;
+    height: 100%;
+    padding-top: 25px;
+    margin-top: 20px;
+  }
+
+  .imgArea {
+    height: 170px;
+    width: 190px;
+    margin-bottom: 30px;
+    left: 0;
+  }
+
+  .nowMoney {
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .text {
+    width: 930px;
+    font-size: 16px;
+  }
+
+  .levelArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .area3 {
+    width: 90%;
+  }
+
+  .recordArea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    font-size: 16px;
+    width: 50px;
+    height: 45px;
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+
+  .inputArea {
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .input {
+    width: 70%;
+    height: 40px;
+  }
+
+  .label {
+    height: 60px;
+  }
+
+  .imgText {
+    left: 40px;
+    top: 250px;
+    width: 300px;
+    height: 100px;
+    font-size: 18px;
+  }
+
+  .recordBox {
+    scrollbar-width: thin;
+    padding-right: 0px;
+  }
+}

@@ -1,0 +1,1920 @@
+.body {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  position: relative;
+}
+.sidmb{
+margin-bottom: 100px;
+}
+
+.dflex {
+  display: flex;
+}
+
+.leftdiv{
+  width: 16%;
+  font-family: var(--ff1);
+}
+
+.rightdiv{
+  width: 83%;
+}
+
+.fonttitle {
+  font-family: var(--ff1);
+  color: var(--main-color);
+  font-size: var(--h3);
+}
+
+/* 副標題 */
+.subtitle{ 
+  font-family: var(--ff3);
+  color: black;
+  font-size: var(--h4);
+  font-weight: 900;
+}
+
+.selecttitle{
+  font-size: var(--h5);
+}
+
+.info{
+  padding-top: 50px;
+}
+
+/* top5餐廳 */
+.top5div{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.top5cardlink{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.top5row{
+  width: 1350px;
+  position: relative;
+  display:  flex;
+  overflow:hidden;
+}
+
+.top5card{
+  position: absolute;
+  width: 270px;
+  min-width: 270px;
+  height:370px;
+  border: none;
+  background:none;
+  transition: transform 0.3s ease;
+}
+
+.top5crown{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top5img{
+  position: relative;
+  padding-top: 5px;
+  filter: drop-shadow(0 0 10px #fac000);
+  transition: .5s ease-in-out;
+}
+
+.top5img:hover{
+  /* transform: scale(1.1); */
+  animation: .5s imghover;
+}
+
+@keyframes imghover{
+  0% {
+    transform: rotate(8deg);
+  }25% {
+    transform: rotate(-8deg);
+  }50% {
+    transform: rotate(3deg);
+  }75% {
+    transform: rotate(-3deg);
+  }100% {
+    transform: rotate(0);
+  }
+}
+
+.top5cardbody{
+  display: flex;
+  height: 58px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 100%;
+}
+
+.top5button{
+  width: 40px;
+  height: 40px;
+  margin: 0px 5px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.top5button:hover{
+  color: var(--sub-color);
+}
+
+.top5name{
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  font-weight: 600;
+  margin: 0;
+}
+
+.top5star{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecbd18;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+
+/* 首頁推薦餐廳區塊 */
+.main{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.maincontent{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 21% 21% 21% 21%;
+  justify-content: space-evenly;
+}
+
+/* 餐廳頁-------------*/
+
+.infodiv{
+  width: 30%;
+}
+
+.reservationdiv{
+  width: 68%;
+}
+
+.infodetail{
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  text-align: center;
+}
+
+.iconstyle{
+  font-size: var(--h5);
+  margin-right: 10px;
+  color: #a8a8a8;
+}
+
+.buttonicon{
+  margin-right: 5px;
+}
+
+.openstyle{
+  color: rgb(56, 201, 56);
+}
+
+.closestyle{
+  color: red;
+}
+
+.map{
+  width: 300px;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.shoppingcarticon{
+  font-size: 60px;
+  margin-top: 15px;
+  color:var(--main-color);
+}
+
+.togglebuttongroup{
+  display: flex;
+  justify-content: center;
+  margin: 24px;
+}
+
+/* 選取日期時間 */
+.timerow{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.timeblock{
+  padding: 5px 20px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.timeblockactive{
+  padding: 5px 20px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.timetext{
+  text-align: center;
+}
+
+.timetextfull{
+  text-align: center;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.interiotdiv{
+  width: 836px;
+  height: 424px;
+  position: relative;
+}
+
+/* 餐廳頁-餐廳名稱 */
+.restauranttitle {
+  /* font-family: var(--ff1); */
+  text-shadow: 0 0 1px black;
+  font-size: var(--h3);
+  font-weight: 900;
+}
+
+.restaurantsubtitle{
+  font-size: var(--h5);
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* 餐廳頁-詳細資訊 */
+.restaurantdetail {
+  font-size: var(--h6);
+}
+
+/* 餐廳頁-資訊對齊用寬度 */
+.detailwidth{
+  width: 75px;
+}
+
+/* 餐廳頁-div間隔 */
+.divmb{
+  margin: 30px 0px;
+}
+
+/* 餐廳頁-人數欄寬＋間隔 */
+.selectperson{
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+
+/* 外帶頁-nav */
+.togoindex{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.categorynav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: var(--h2);
+    color: var(--main-color);
+}
+.categorydiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+    margin: 0 15px;
+    padding: 5px;
+}
+
+.categorydivactive{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 0;
+  margin: 0 15px;
+  padding: 5px;
+}
+
+.categoryfont{
+  font-size: var(--h7);
+  font-weight: 600;
+}
+
+.togomain{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.togocontent{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 22% 22% 22% 22%;
+  justify-content: space-evenly;
+  /* grid-template-rows: repeat(7, 1fr); */
+}
+
+/* card樣式 */
+.card{
+  height:350px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.card2{
+  height:250px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.carddiv{
+  width: 100%;
+  height: 70%;
+  border-radius: 15px 15px 0px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardimg{
+  position: relative;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardtitle{
+  font-weight: bold;
+  white-space: nowrap; /* 不換行 */
+  overflow: hidden; /* 超過部分隱藏 */
+  text-overflow: ellipsis; 
+}
+
+.cardlocation{
+  white-space: nowrap; /* 不換行 */
+  overflow: hidden; /* 超過部分隱藏 */
+  text-overflow: ellipsis; 
+}
+
+.cardbottomicon{
+  font-size: var(--h8);
+  background: var(--main-color);
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.cardtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #d9d9d9;
+  font-size: var(--h4);
+  border: 1px solid #d9d9d9;
+  border-radius: 30px;
+  padding: 8px 16px;
+  transition: opacity 0.3s ease-in;
+}
+
+.togocardtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #d9d9d9;
+  font-size: var(--h7);
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 5px 10px;
+  transition: opacity 0.3s ease-in;
+}
+
+.carddiv:hover .cardimg {
+  filter: brightness(0.6) blur(2px);
+}
+
+.carddiv:hover .cardtext {
+  opacity: 1;
+}
+
+.carddiv:hover .togocardtext {
+  opacity: 1;
+}
+
+.additembutton{
+  display: flex;
+  flex-direction: column;
+}
+
+.additem {
+  opacity: 0;
+  position: absolute;
+  top:-20px;
+  right:10px;
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: var(--h4);
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.showplus {
+  animation: .5s showplus ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showplus {
+  0%{
+    opacity: .5;
+    transform: translateY(-10px);
+  }
+  60%{
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+}
+
+
+
+.cardheart{
+  color: #911010;
+  width: 30px;
+}
+
+.cardheart:hover{
+  color: #911010;
+  cursor: pointer;
+}
+
+.paginationbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sortdiv{
+  width: 10%;
+}
+
+/* Modal */
+
+.modalimg{
+  height: 100%;
+  width: 58%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.modalword{
+  height: 100%;
+  width: 40%;
+}
+
+.modaltitle{
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  font-size: var(--h3);
+  padding-top: 20px;
+}
+
+.modaltext{
+  height: 25%;
+  display: flex;
+  font-size: var(--h5);
+  padding-top: 20px;
+}
+
+.modalprice{
+  height: 25%;
+  display: flex;
+  font-size: var(--h5);
+  padding-top: 20px;
+  color: var(--main-color);
+}
+
+
+/* ---------------------------------------- */
+
+/* 購物車ShoppingCart */
+
+.cartbody{
+  background-image: url('/background/kodawari_bg_cut.jpg');
+}
+
+.carticon{
+  position: absolute;
+  right: 20px;
+  top: 900px;
+}
+
+.carttitle{
+  font-size: var(--h4);
+  font-weight: 600;
+}
+
+.shoptitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--h4);
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.shoptitleicon{
+  margin-right: 10px;
+}
+
+.shoppingcartdiv{
+  display: flex;
+  font-size: var(--h6);
+  margin: 5px 0px;
+}
+
+.shoppingcartbody1{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shoppingcartbody2{
+  display: flex;
+  width: 100%;
+  font-size: var(--h5);
+  font-weight: bold;
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+
+.shoppingcartbody3{
+  display: flex;
+}
+
+.cartimage{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.trashicon{
+  font-size: 24px;
+  cursor: pointer;
+  color: #a8a8a8;
+}
+
+.trashicon:hover{
+  font-size: 24px;
+  color: #911010;
+}
+
+.cartemptydiv{
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartemptyicon{
+  color: #a8a8a8;
+  font-size: 100px;
+}
+
+.cartemptytext{
+  color: #a8a8a8;
+  font-size: var(--h5);
+}
+
+
+.cartbutton{
+  width: 40px;
+  height:40px;
+  background-color: white;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: var(--main-color);
+  font-weight:bold;
+  border: 3px solid var(--main-color);
+ 
+}
+
+.cartbutton:hover{
+  color: var(--sub-color);
+  border: 3px solid var(--sub-color);
+}
+
+.cartcount{
+  width: 40px;
+  height:40px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  border: 2px solid #d9d9d9;
+}
+
+.cartprice{
+  line-height: 40px;
+}
+
+.hrcolor{
+  border-color:black;
+  border-width: 2px;
+}
+
+.totalprice{
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--h5);
+  font-weight: bold;
+  margin: 10px 20px;
+}
+
+.togotime{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--h5);
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 10px 0px;
+}
+
+.cartsendbutton{
+  width:100%;
+  font-size: var(--h6);
+  background-color: var(--main-color);
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  font-weight: 900;
+  line-height: 36px;
+ }
+
+ .cartsendbutton:hover{
+  background-color:var(--sub-color);
+  color: var(--main-color);
+  font-weight: 900;
+ }
+
+ .noitemdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .noitemimg{
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+ }
+
+  .noitemtext{
+    font-size: var(--h3);
+    color:var(--sub-color);
+    margin-top: 20px;
+  }
+
+
+
+
+/* ---------------------------------------- */
+
+
+.borderbottom {
+  border-bottom: 2px solid var(--main-color);
+}
+
+.spaceevenly {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 40vh ;
+}
+
+.carouselitem{
+  object-fit: contain; 
+  overflow: hidden;
+  margin-top: -300px;
+}
+
+.selectarea {
+  height: 100%;
+  margin: 30px;
+  /* background-color: rgb(243, 202, 212); */
+}
+
+.selectbutton {
+  font-size: 18px;
+  width: 60px;
+  height: 40px;
+  border-radius: 20px;
+  border: 0px;
+  margin: 5px 0px;
+  font-family: var(--ff3);
+  font-weight: 900;
+  /* text-shadow: 0 0 1px black; */
+}
+
+.buttonon {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.buttonoff {
+  background-color: #e2dfdd;
+}
+
+.togglebutton {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  font-size: var(--h6);
+  font-weight: 900;
+}
+
+.toggleactive1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: white;
+  font-size: var(--h6);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-weight: 900;
+}
+
+.toggleactive2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: white;
+  font-size: var(--h6);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-weight: 900;
+}
+
+.togglediv {
+  width: 400px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid var(--main-color);
+}
+
+.topdiv {
+  position: relative;
+}
+
+/* 餐廳座位圖 */
+
+.disabledicon{
+  font-size: var(--h3);
+  color: #a8a8a8;
+  margin-left: 20px;
+}
+
+.svgicon:hover *{
+  cursor: pointer;
+  }
+ 
+.svgactive *{
+  fill: var(--main-color);
+  cursor: pointer;
+}
+
+.svg6{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+} 
+
+.svg8{
+  position: absolute; 
+  top: 30px; 
+  right: 30px;
+}
+
+.svg8s{
+  position: absolute;
+  bottom: 40px; 
+  right: 20px;
+}
+
+.svg41{
+  position: absolute; 
+    top: 260px;
+    left: 200px;
+}
+
+.svg42{
+  position: absolute; 
+    top: 260px;
+    left: 350px;
+}
+
+.svg43{
+  position: absolute; 
+    top: 80px;
+    left: 530px;
+}
+
+.svg4s1{
+  position: absolute; 
+    top: 130px;
+    left: 150px;
+}
+
+.svg4s2{
+  position: absolute; 
+    top: 130px;
+    left: 280px;
+}
+
+.svg21{
+  position: absolute; 
+    top: 10px;
+    left: 180px;
+}
+
+.svg22{
+  position: absolute; 
+    top: 10px;
+    left: 240px;
+}
+
+.svg23{
+  position: absolute; 
+    top: 10px;
+    left: 300px;
+}
+
+.svg24{
+  position: absolute; 
+    top: 10px;
+    left: 360px;
+}
+
+.svg2s1{
+  position: absolute; 
+  bottom: 10px;
+    left: 120px;
+}
+
+.svg2s2{
+  position: absolute; 
+  bottom: 10px;
+    left: 250px;
+}
+
+.svg2s3 {
+  position: absolute; 
+  bottom: 10px;
+    left: 380px;
+}
+
+.svgdisabled{
+  pointer-events: none;
+}
+
+/* memo欄位 */
+.memostyle{
+  resize: none;
+  border:none;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  opacity: 0.6;
+  outline: none;
+  padding: 5px 10px;
+  font-size: var(--h6);
+}
+
+/* 送出訂位區塊 */
+.submitdiv{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+}
+
+.submitbutton {
+  width: 20%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: #911010;
+  color: white;
+}
+
+
+
+/* sweetalert */
+.my-sweetalert-container {
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px;
+  background-color: #4caf50;
+}
+
+.my-sweetalert-title {
+  color: #000000;
+  font-size: 24px;
+}
+
+.my-sweetalert-confirm-button {
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+.my-sweetalert-cancel-button {
+  background-color: #ccc;
+  color: #000;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+
+/* --------------------------------------------- */
+/* 查詢餐廳-輸入文字區塊 */
+.searchbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 40px;
+  border:3px solid var(--main-color);
+  /* box-shadow: 0 0 5px 5px white;  */
+  /* border: none; */
+}
+.searchinput{
+  width:100%;
+  height: 100%;
+  font-size: var(--h5);
+  border: none;
+  outline: none;
+}
+
+/* 篩選器rwd */
+.rwdselected{
+  display: none;
+}
+
+/* 查詢條件-條件區塊 */
+.clearselect{
+  width:50%;
+  text-align: center;
+  background-color: #911010;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 5px 10px;
+}
+
+
+
+/* --------------------------------------------- */
+
+.bordernone {
+  border: none;
+}
+
+.searchinput {
+  height: 50px;
+  background: none;
+  border: none;
+}
+
+.borderradius {
+  background-color: #911010 !important;
+  border-radius: 20px;
+  border: none !important;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.me5{
+  margin-right: 5px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mt30{
+  margin-top: 30px;
+}
+
+
+/* ----------------------RWD---------------------- */
+
+@media screen and (max-width: 391px) {
+  .topdiv{
+    width: 100%;
+  }
+  .carousel{
+    display: none;
+    margin: 0px;
+  }
+
+  .rwdsearchdiv{
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .searchbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    /* margin-top: 100px; */
+    background-color: white;
+    border-radius: 40px;
+    border:3px solid var(--main-color);
+  }
+  .searchinput{
+    width:100%;
+    height: 100%;
+    font-size: var(--h5);
+    border: none;
+    outline: none;
+  }
+
+  /* 篩選器rwd */
+  .rwdselected{
+  display: block;
+}
+  .rwdselected{
+    display: block;
+    position: relative;
+    color: var(--main-color);
+    width: 45px;
+    height: 45px;
+    margin: 10px 10px;
+  }
+  
+  /* 查詢條件-條件區塊 */
+  .clearselect{
+    width:50%;
+    text-align: center;
+    background-color: #911010;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .rwdarea{
+    display: none;
+  }
+
+  .rightdiv{
+    width: 100%;
+  }
+
+
+  /* top5餐廳 ------------*/
+.top5div{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.top5cardlink{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.top5row{
+  width: 270px;
+  position: relative;
+  display:  flex;
+  overflow:hidden;
+}
+
+.top5crown{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:30px;
+  height: 30px;
+}
+
+.top5card{
+  position: absolute;
+  width: 135px;
+  min-width: 135px;
+  height: 200px;
+  border: none;
+  background:none;
+  transition: transform 0.3s ease;
+}
+
+.top5cardbody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 100%;
+  font-size: var(--h8);
+}
+
+.top5button{
+  width: 20px;
+  height: 20px;
+  margin: 0px 2px;
+  color: var(--main-color);
+}
+
+.top5button:hover{
+  color: var(--sub-color);
+}
+
+.top5name{
+  display: flex;
+  justify-content: center;
+  /* align-items:flex-end; */
+  margin: 0;
+  font-size: var(--h7);
+}
+
+.top5star{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecbd18;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.contentdiv{
+  display: flex;
+  justify-content: center;
+}
+
+
+.fonttitle {
+    font-size: var(--h5);
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+}
+
+.maincontent{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 21% 21% 21% 21%;
+    justify-content: space-evenly;
+}
+
+/* card樣式 -----------*/
+.card{
+  width: 45%;
+  height:300px;
+  border: none;
+}
+
+.carddiv{
+  width: 100%;
+  height: 60%;
+  border-radius: 15px 15px 0px 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardbody{
+  padding: 8px;
+}
+
+.cardimg{
+  position: relative;
+}
+
+.cardtitle{
+  font-weight: bold;
+  white-space: nowrap; /* 不換行 */
+  overflow: hidden; /* 超過部分隱藏 */
+  text-overflow: ellipsis; 
+}
+
+
+.cardbottomicon{
+  display: flex;
+  align-items: center;
+  font-size: var(--h10);
+  background: var(--main-color);
+  border-radius: 20px;
+  border: 0px;
+  color: white;
+  padding: 1px 5px;
+}
+
+.cardtext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: #d9d9d9;
+  font-size: var(--h8);
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 4px 8px;
+  transition: opacity 0.3s ease-in;
+}
+
+.carddiv:hover .cardimg {
+  filter: brightness(0.5) blur(2px);
+}
+
+.carddiv:hover .cardtext {
+  opacity: 1;
+}
+
+.cardheart{
+  color: #911010;
+}
+
+.cardheart:hover{
+  color: #911010;
+}
+
+/* 餐廳頁面------------------ */
+
+.rwdrow{
+  flex-direction: column;
+}
+
+.infodiv{
+  width: 100%;
+}
+
+.reservationdiv{
+  width: 100%;
+}
+
+.info{
+  padding-top: 70px;
+}
+
+.infodetail{
+  display: flex;
+  padding: 5px 0px;
+  align-items: center;
+  text-align: center;
+}
+
+.iconstyle{
+  font-size: var(--h5);
+  margin-right: 10px;
+  color: #a8a8a8;
+}
+
+.buttonicon{
+  margin-right: 5px;
+}
+
+.openstyle{
+  color: rgb(56, 201, 56);
+}
+
+.closestyle{
+  color: red;
+}
+
+.map{
+  display: none;
+}
+
+.shoppingcarticon{
+  font-size: 60px;
+  margin-top: 15px;
+  color:var(--main-color);
+}
+
+.togglebuttongroup{
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+.togglediv {
+  width: 370px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid var(--main-color);
+}
+
+/* 選取日期時間 */
+.timerow{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.timeblock{
+  padding: 3px 5px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.timeblockactive{
+  padding: 3px 5px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.timetext{
+  text-align: center;
+  font-size: 12px;
+}
+
+
+/* 餐廳頁-餐廳名稱 */
+.restauranttitle {
+  text-shadow: 0 0 1px black;
+  font-size: var(--h4);
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+.restaurantsubtitle{
+  font-size: var(--h5);
+  color: var(--main-color);
+  font-weight:500;
+}
+
+/* 餐廳頁-詳細資訊 */
+.restaurantdetail {
+  font-size: var(--h6);
+}
+
+/* 餐廳頁-資訊對齊用寬度 */
+.detailwidth{
+  width: 75px;
+}
+
+/* 餐廳頁-div間隔 */
+.divmb{
+  margin: 15px 0px;
+}
+
+/* 餐廳頁-人數欄寬＋間隔 */
+.selectperson{
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+/* 餐廳座位圖 */
+
+.interiotdiv{
+  width: 370px;
+  height: 188px;
+  background-size : cover;
+  background-repeat: no-repeat;
+  position: relative;
+  /* background-position: center; */
+  /* transform: scale(0.4); */
+}
+
+.interiorscale{
+  transform: scale(0.5);
+}
+
+.svg6{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+} 
+
+.svg8{
+  position: absolute; 
+  top: -25px; 
+  right: -15px;
+}
+
+.svg8s{
+  position: absolute;
+  bottom: -20px; 
+  right: -25px;
+}
+
+.svg41{
+  position: absolute; 
+    top: 100px;
+    left: 70px;
+}
+
+.svg42{
+  position: absolute; 
+    top: 100px;
+    left: 130px;
+}
+
+.svg43{
+  position: absolute; 
+  top: 20px;
+  left: 215px;
+}
+
+.svg4s1{
+  position: absolute; 
+    top: 15px;
+    left: 40px;
+}
+
+.svg4s2{
+  position: absolute; 
+    top: 15px;
+    left: 90px;
+}
+
+.svg21{
+  position: absolute; 
+    top: -15px;
+    left: 75px;
+}
+
+.svg22{
+  position: absolute; 
+    top: -15px;
+    left: 100px;
+}
+
+.svg23{
+  position: absolute; 
+    top: -15px;
+    left: 125px;
+}
+
+.svg24{
+  position: absolute; 
+    top: -15px;
+    left: 150px;
+}
+
+.svg2s1{
+  position: absolute; 
+  bottom: 0px;
+  left: 30px;
+}
+
+.svg2s2{
+  position: absolute; 
+  bottom: 0px;
+  left: 90px;
+}
+
+.svg2s3 {
+  position: absolute; 
+  bottom: 0px;
+    left: 150px;
+}
+
+/* memo欄位 */
+.memostyle{
+  width: 70%;
+  resize: none;
+  border:none;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  opacity: 0.6;
+  outline: none;
+  padding: 5px 10px;
+  font-size: var(--h6);
+}
+
+/* 送出訂位區塊 */
+.submitdiv{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+}
+
+.submitbutton {
+  width: 30%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
+  background-color: #911010;
+  color: white;
+}
+
+
+/* 外帶頁-nav */
+
+.togoindex{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.categorynav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: var(--h4);
+    color: var(--main-color);
+}
+
+.categorydiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  margin:0px;
+  padding: 2px;
+}
+
+.categorydivactive{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 90%;
+height: 100%;
+background-color: var(--main-color);
+border-radius: 15px;
+color: white;
+margin:0px;
+padding: 2px;
+}
+
+.categoryfont{
+font-size: 10px;
+font-weight: 600;
+}
+
+/* togo卡片區 */
+.togomain{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.togocontent{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+  /* grid-template-rows: repeat(7, 1fr); */
+}
+
+.modaldiv{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.modalimg{
+  height: 60%;
+  width: 58%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.modalword{
+  height: 100%;
+  width: 40%;
+}
+
+.modaltitle{
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  font-size: var(--h6);
+  margin-top: 10px;
+}
+
+.modaltext{
+  height: 40%;
+  display: flex;
+  font-size: var(--h8);
+  margin-top: 10px;
+}
+
+.modalprice{
+  height: 20%;
+  display: flex;
+  font-size: var(--h7);
+  margin-top: 10px;
+  color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 副標題 */
+.subtitle{ 
+  font-family: var(--ff3);
+  color: black;
+  font-size: var(--h4);
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+/* 購物車ShoppingCart */
+
+.cartbody{
+  background-image: url('/background/kodawari_bg_cut.jpg');
+}
+
+.carticon{
+  position: absolute;
+  right: 20px;
+  top: 270px;
+}
+
+.carttitle{
+  font-size: var(--h4);
+  font-weight: 600;
+}
+
+.shoptitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--h4);
+  color: var(--main-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.shoptitleicon{
+  margin-right: 10px;
+}
+
+.shoppingcartdiv{
+  display: flex;
+  font-size: var(--h6);
+  margin: 5px 0px;
+}
+
+.shoppingcartbody1{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.shoppingcartbody2{
+  display: flex;
+  width: 100%;
+  font-size: var(--h5);
+  font-weight: bold;
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+
+.shoppingcartbody3{
+  display: flex;
+}
+
+.cartimage{
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.trashicon{
+  font-size: 24px;
+  cursor: pointer;
+  color: #a8a8a8;
+}
+
+.trashicon:hover{
+  font-size: 24px;
+  color: #911010;
+}
+
+.cartemptydiv{
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartemptyicon{
+  color: #a8a8a8;
+  font-size: 100px;
+}
+
+.cartemptytext{
+  color: #a8a8a8;
+  font-size: var(--h5);
+}
+
+
+.cartbutton{
+  width: 40px;
+  height:40px;
+  background-color: white;
+  margin-right: 10px;
+  border-radius: 10px;
+  color: var(--main-color);
+  font-weight:bold;
+  border: 3px solid var(--main-color);
+ 
+}
+
+.cartbutton:hover{
+  color: var(--sub-color);
+  border: 3px solid var(--sub-color);
+}
+
+.cartcount{
+  width: 40px;
+  height:40px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 10px;
+  border: 2px solid #d9d9d9;
+}
+
+.cartprice{
+  line-height: 40px;
+}
+
+.hrcolor{
+  border-color:black;
+  border-width: 2px;
+}
+
+.totalprice{
+  display: flex;
+  justify-content: flex-end;
+  font-size: var(--h5);
+  font-weight: bold;
+  margin: 10px 20px;
+}
+
+.togotime{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--h5);
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 10px 0px;
+}
+
+.cartsendbutton{
+  width:100%;
+  font-size: var(--h6);
+  background-color: var(--main-color);
+  border-radius: 20px;
+  border: 0;
+  color: white;
+  font-weight: 900;
+  line-height: 36px;
+ }
+
+ .cartsendbutton:hover{
+  background-color:var(--sub-color);
+  color: var(--main-color);
+  font-weight: 900;
+ }
+
+ .noitemdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .noitemimg{
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+ }
+
+  .noitemtext{
+    font-size: var(--h3);
+    color:var(--sub-color);
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,75 @@
+.top{
+    margin-top: 40px;
+}
+.flex{
+    display: flex;
+}
+.left{
+    display: flex;
+}
+.nickname{
+    margin-top: 20px;
+    font-family: var(--ff2);
+    font-size: var(--h5);
+}
+.imgcontainer{
+     object-fit:contain;
+     display: flex;
+}
+.avatar{
+    background-color: red;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+}
+.ptext{
+    font-size: var(--h4);
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.img{
+    width: 600px;
+    height:600px;
+    margin-bottom: 20px;
+    margin-right: 120px;
+    
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+.pcontainer{
+    width: 300px;
+
+}
+@media screen and (max-width:767px) {
+    .container{
+        width: 95%;
+    }
+    .img{
+        height:300px;
+        width: 400px;
+        margin: 0;
+    }
+   .pcontainer{
+    width: 300px;
+}
+.left{
+    display: block;
+}
+.imgcontainer{
+    object-fit:contain;
+    display: flex;
+    
+}
+}

@@ -1,0 +1,184 @@
+:root {
+  --main-color: #911010;
+  --sub-color: #fab3b3;
+  --h1: 72px;
+  --h2: 48px;
+  --h3: 32px;
+  --h4: 24px;
+  --h5: 20px;
+  --h6: 18px;
+  --h7: 16px;
+  --h8: 14px;
+  --h9: 12px;
+  --h10: 10px;
+  --h11: 8px;
+  --ff1: 'Mochiy Pop One', sans-serif;
+  --ff2: 'Zen Maru Gothic', sans-serif;
+  --ff3: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('/background/kodawari_bg_cut.jpg');
+  background-repeat: repeat;
+  height: 100%;
+}
+
+#__next {
+  height: auto;
+}
+
+html {
+  height: 100%;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+main {
+  min-height: calc(100vh - 360px - 470px);
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  background-color: #edd1d3bf;
+}
+
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  /* box-shadow: inset 2px 2px 5px rgba(255, 255, 255,0.4), inset -2px -2px 5px rgba(0, 0, 0, 0.4); */
+}
+
+@font-face {
+  font-family: 'Zen Maru Gothic';
+  /* 使用正確的字型名稱 */
+  src: url('/fonts/ZenMaruGothic-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: bold;
+  font-style: normal;
+  src: url('/fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Mochiy Pop One';
+  font-weight: bold;
+  font-style: normal;
+  src: url('/fonts/MochiyPopOne-Regular.ttf') format('truetype');
+}
+
+@media screen and (max-width: 1440px) {
+  main {
+    min-height: calc(100vh - 360px - 360px);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    min-height: calc(100vh - 360px - 250px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    min-height: calc(100vh - 200px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    min-height: calc(100vh - 180px);
+  }
+}
+
+a:hover,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  /* 取消底線 */
+  color: inherit;
+  /* 使用父元素的文字顏色 */
+}
+
+.gm-style-iw {
+  border: 2px solid var(--main-color);
+  /* width: 600px; */
+}
+
+/* 自訂 InfoWindow 關閉按鈕樣式 */
+.gm-ui-hover-effect {
+  opacity: 0.75;
+}
+
+.gm-style-iw button {
+  background-color: var(--sub-color) !important;
+  color: white;
+  border-radius: 50%;
+  transform: scale(1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 5px !important;
+  right: 5px !important;
+}
+
+.gm-style-iw button:hover {
+  opacity: 1;
+}
+
+.gm-style .gm-style-iw-d {
+  color: var(--main-color);
+  font-family: var(--ff1);
+  font-size: var(--h7);
+}
+
+.swal2-container {
+  z-index: 2000;
+  /* 使用你需要的數字 */
+}
+
+.swal2-styled {
+  font-family: var(--ff1);
+  border-radius: 50px !important;
+  letter-spacing: 1px;
+}
+
+/* .swal2-popup{
+  border: 5px solid var(--main-color);
+  border-radius: 10px;
+} */
+
+.swal2-confirm {
+  background-color: var(--main-color) !important;
+}
+
+.swal2-deny {
+  background-color: var(--sub-color) !important;
+}
+
+.swal2-cancel {
+  background-color: var(--sub-color) !important;
+}
+
+.sweetalert_icon {
+  transform: scale(0.5);
+}
